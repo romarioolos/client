@@ -1,0 +1,30 @@
+.log-line {
+  padding: 4px 0;
+  font-family: monospace;
+  cursor: default;
+}
+
+.log-error {
+  color: #ff4c4c;
+  font-weight: bold;
+}
+
+.log-warn {
+  color: #ffae00;
+}
+
+.log-info {
+  color: #4cd137;
+}
+
+.log-default {
+  color: #cccccc;
+}
+
+.collapsible {
+  cursor: pointer;
+}
+
+.collapsible:hover {
+  text-decoration: underline;
+}

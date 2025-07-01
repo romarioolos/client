@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Olos Bot Logs v2 - Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é o frontend do Olos Bot Logs v2, desenvolvido em React.
 
-## Available Scripts
+## Funcionalidades Atuais
 
-In the project directory, you can run:
+- **Visualização de Logs:** Exibe logs de conversas dos bots em tempo real ou históricos.
+- **Busca e Filtros:** Permite buscar logs por data, usuário, status ou outros critérios relevantes.
+- **Detalhamento de Conversas:** Mostra detalhes completos de cada interação, incluindo mensagens, horários e status.
+- **Atualização Automática:** Os logs são atualizados automaticamente sem necessidade de recarregar a página.
+- **Exportação de Logs:** Possibilidade de exportar logs filtrados para análise externa (CSV/Excel).
+- **Interface Responsiva:** Layout adaptável para diferentes tamanhos de tela.
+- **Autenticação:** Acesso restrito por login para garantir a segurança dos dados.
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode rodar:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Inicia o app em modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualizar no navegador.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Executa os testes interativos.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Gera uma versão otimizada para produção na pasta `build`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Saiba Mais
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Documentação do React](https://reactjs.org/)
+- [Documentação Create React App](https://facebook.github.io/create-react-app/docs/getting-started)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

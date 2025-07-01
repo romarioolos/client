@@ -1,38 +1,195 @@
 .App {
-  text-align: center;
+  font-family: monospace;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #00ff00;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.log-box {
+  white-space: pre-wrap;
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 8px;
+  height: 100vh;
+  overflow-y: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.log-line {
+  padding: 4px 0;
+  cursor: default;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.log-error {
+  color: #ff4c4c;
+  font-weight: bold;
+}
+.log-warn {
+  color: #ffae00;
+}
+.log-info {
+  color: #4cd137;
+}
+.log-default {
+  color: #cccccc;
+}
+.collapsible {
+  cursor: pointer;
+}
+.collapsible:hover {
+  text-decoration: underline;
+}
+.collapsible-content {
+  display: none;
+  margin-left: 20px;
+}
+.collapsible.active + .collapsible-content {
+  display: block;
+}
+.collapsible-header {     
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+.collapsible-header .timestamp {
+  color: #888888;
+  font-size: 0.9em;
+}
+.collapsible-header .level {
+  font-weight: bold;
+}
+.collapsible-header .message {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+.collapsible-header .toggle-icon {
+  font-size: 0.8em;
+  color: #888888;
+}
+.collapsible-header .toggle-icon:hover {
+  color: #ffffff;
+}
+.collapsible-header .toggle-icon:before {
+  content: '▶';
+  transition: transform 0.2s ease;
+}
+.collapsible.active .collapsible-header .toggle-icon:before {
+  content: '▼';
+  transform: rotate(180deg);
+}
+.collapsible-content pre {
+  margin: 0;
+  padding: 10px;
+  background-color: #1e1e1e;
+  border-radius: 4px;
+  color: #cccccc;
+  font-size: 0.9em;
+}
+.collapsible-content pre .log-line {
+  padding: 2px 0;
+}
+.collapsible-content pre .log-error {
+  color: #ff4c4c;
+}
+.collapsible-content pre .log-warn {
+  color: #ffae00;
+}
+.collapsible-content pre .log-info {
+  color: #4cd137;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.controls input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.controls label {
+  font-size: 14px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+}
+input[type="checkbox"]:checked {
+  background-color: #4cd137;
+}
+input[type="checkbox"]:not(:checked) {
+  background-color: #ff4c4c;
+}
+input[type="checkbox"] + span {
+  margin-left: 5px;
+  color: #ccc;
+}
+input[type="checkbox"]:checked + span {
+  color: #4cd137;
+}
+input[type="checkbox"]:not(:checked) + span {
+  color: #ff4c4c;
+}
+button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #4cd137;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #45a049;
+}
+button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+button:disabled:hover {
+  background-color: #888;
+}
+button:disabled:active {
+  background-color: #888;
+}
+button:active {
+  background-color: #3e8e41;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.controls input[type="text"] {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.controls button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #00b894;
   color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.controls button:hover {
+  background-color: #019875;
 }
